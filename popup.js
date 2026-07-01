@@ -205,8 +205,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     var latVal = parseFloat(d.latency);
-    if (d.profile && d.profile !== profile) {
+    if (d.profile && (d.profile !== profile || (d.profile === "custom" && d.customLatency !== customLat))) {
       profile = d.profile;
+      if (d.customLatency !== undefined) {
+        customLat = d.customLatency;
+      }
       syncBtns();
     }
     var tgt = d.profile === "custom" ? d.customLatency : (tgtMap[d.profile] || 1.5);
