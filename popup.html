@@ -185,6 +185,90 @@
       90% { transform: translateY(0) rotate(540deg); }
       100% { left: 100%; transform: translateY(0) rotate(600deg); }
     }
+    .sport-politica .match-single-icon {
+      position: absolute;
+      left: calc(50% - 10px);
+      animation: politicalSwing 3s ease-in-out infinite;
+    }
+    @keyframes politicalSwing {
+      0% { transform: translateY(0) rotate(-15deg); }
+      50% { transform: translateY(-6px) rotate(15deg); }
+      100% { transform: translateY(0) rotate(-15deg); }
+    }
+    .sport-espaco .match-single-icon {
+      position: absolute;
+      animation: spaceOrbit 4s ease-in-out infinite;
+    }
+    @keyframes spaceOrbit {
+      0% { left: 0%; transform: scale(0.8); opacity: 0.7; }
+      50% { left: 80%; transform: scale(1.2); opacity: 1; }
+      100% { left: 0%; transform: scale(0.8); opacity: 0.7; }
+    }
+    .sport-ciencia .match-single-icon {
+      position: absolute;
+      left: calc(50% - 10px);
+      animation: sciencePulse 2s ease-in-out infinite;
+    }
+    @keyframes sciencePulse {
+      0% { transform: scale(0.9); filter: drop-shadow(0 0 1px var(--primary-glow)); }
+      50% { transform: scale(1.2); filter: drop-shadow(0 0 8px var(--primary-glow)); }
+      100% { transform: scale(0.9); filter: drop-shadow(0 0 1px var(--primary-glow)); }
+    }
+    .sport-noticia .match-single-icon {
+      position: absolute;
+      left: calc(50% - 10px);
+      animation: newsSpin 3.5s cubic-bezier(0.25, 1, 0.5, 1) infinite;
+    }
+    @keyframes newsSpin {
+      0% { transform: scale(0) rotate(0deg); opacity: 0; }
+      10% { transform: scale(1.3) rotate(360deg); opacity: 1; }
+      15% { transform: scale(1.1) rotate(360deg); }
+      85% { transform: scale(1.1) rotate(360deg); opacity: 1; }
+      95% { transform: scale(0) rotate(720deg); opacity: 0; }
+      100% { transform: scale(0) rotate(720deg); opacity: 0; }
+    }
+    .sport-desenho .match-single-icon {
+      position: absolute;
+      animation: cartoonBounce 3.5s ease-in-out infinite;
+    }
+    @keyframes cartoonBounce {
+      0% { left: 0%; transform: translateY(0) scaleY(1); }
+      25% { transform: translateY(-10px) rotate(10deg); }
+      50% { left: 80%; transform: translateY(0) scaleY(0.9); }
+      75% { transform: translateY(-10px) rotate(-10deg); }
+      100% { left: 0%; transform: translateY(0) scaleY(1); }
+    }
+    .sport-jogos .match-single-icon {
+      position: absolute;
+      animation: gamesRumble 2.5s linear infinite;
+    }
+    @keyframes gamesRumble {
+      0% { left: -10px; transform: translate(0, 0) rotate(0deg); }
+      10% { transform: translate(-1px, -1px) rotate(-1deg); }
+      20% { transform: translate(1px, 0px) rotate(1deg); }
+      30% { transform: translate(-1px, 1px) rotate(0deg); }
+      40% { transform: translate(1px, -1px) rotate(1deg); }
+      50% { left: 50%; transform: translate(-1px, 1px) rotate(-1deg); }
+      60% { transform: translate(1px, 1px) rotate(0deg); }
+      70% { transform: translate(-1px, -1px) rotate(1deg); }
+      80% { transform: translate(1px, -1px) rotate(-1deg); }
+      90% { transform: translate(-1px, 1px) rotate(0deg); }
+      100% { left: 105%; transform: translate(0, 0) rotate(0deg); }
+    }
+    .sport-musica .match-single-icon {
+      position: absolute;
+      left: calc(50% - 10px);
+      animation: musicBeat 1.8s ease-in-out infinite;
+    }
+    @keyframes musicBeat {
+      0% { transform: scale(1) rotate(0deg); }
+      15% { transform: scale(1.25) rotate(-5deg); }
+      30% { transform: scale(0.95) rotate(3deg); }
+      45% { transform: scale(1.2) rotate(-3deg); }
+      60% { transform: scale(0.95) rotate(2deg); }
+      75% { transform: scale(1.15) rotate(-2deg); }
+      100% { transform: scale(1) rotate(0deg); }
+    }
     .no-live { font-size:10px; color:var(--muted); text-align:center; padding:6px 0; line-height:1.5; }
 
     .profs { display:grid; grid-template-columns:repeat(3,1fr); gap:5px; margin-bottom:8px; }

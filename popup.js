@@ -168,13 +168,39 @@ document.addEventListener("DOMContentLoaded", function () {
       var isCorrida = d.sport === "\uD83C\uDFCE\uFE0F" || d.sport === "\uD83C\uDFCE" || d.sport === "🏎️";
       var isFoguete = d.sport === "\uD83D\uDE80" || d.sport === "🚀";
       var isFutebol = d.sport === "\u26BD" || d.sport === "⚽";
+      var isPolitica = d.sport === "🦑" || d.sport === "🏛️";
+      var isEspaco = d.sport === "🪐";
+      var isCiencia = d.sport === "🔬";
+      var isNoticia = d.sport === "📰";
+      var isDesenho = d.sport === "🧸";
+      var isJogos = d.sport === "🎮";
+      var isMusica = d.sport === "🎶";
+      var isBasquete = d.sport === "\uD83C\uDFC0";
+      var isVolei = d.sport === "\uD83C\uDFD0";
+      var isTenis = d.sport === "\uD83C\uDFBE";
+      var isFutebolAmericano = d.sport === "\uD83C\uDFC8";
+      var isBaseball = d.sport === "\u26BE";
+      var isHockey = d.sport === "\uD83C\uDFD2";
+      var isOlimpiadas = d.sport === "\uD83C\uDFFF";
+      var isNatacao = d.sport === "\uD83C\uDFCA";
+      var isAtletismo = d.sport === "\uD83C\uDFC3";
+      var isCiclismo = d.sport === "\uD83D\uDEB4";
+      var isSurfe = d.sport === "\uD83C\uDFC4";
+      var isSkate = d.sport === "\uD83D\uDEF9";
       sportBox.classList.toggle("sport-corrida", isCorrida);
       sportBox.classList.toggle("sport-foguete", isFoguete);
-      sportBox.classList.toggle("sport-futebol", isFutebol);
+      sportBox.classList.toggle("sport-futebol", isFutebol || isBasquete || isVolei || isTenis || isFutebolAmericano || isBaseball || isHockey || isOlimpiadas || isNatacao || isAtletismo || isCiclismo || isSurfe || isSkate);
+      sportBox.classList.toggle("sport-politica", isPolitica);
+      sportBox.classList.toggle("sport-espaco", isEspaco);
+      sportBox.classList.toggle("sport-ciencia", isCiencia);
+      sportBox.classList.toggle("sport-noticia", isNoticia);
+      sportBox.classList.toggle("sport-desenho", isDesenho);
+      sportBox.classList.toggle("sport-jogos", isJogos);
+      sportBox.classList.toggle("sport-musica", isMusica);
     } else {
       matchBox.style.display = "none";
       sportBox.style.display = "none";
-      sportBox.classList.remove("sport-corrida", "sport-foguete", "sport-futebol");
+      sportBox.classList.remove("sport-corrida", "sport-foguete", "sport-futebol", "sport-politica", "sport-espaco", "sport-ciencia", "sport-noticia", "sport-desenho", "sport-jogos", "sport-musica");
     }
 
     var latVal = parseFloat(d.latency);
