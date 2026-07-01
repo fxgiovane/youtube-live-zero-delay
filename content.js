@@ -28,7 +28,7 @@
 
   var SEEK_COOLDOWN = 15000;
   var CATCH_UP_BAND = 1.5;
-  var DRAIN_BRAKE = -0.02;
+  var DRAIN_BRAKE = -0.5;
   var BUFFER_FLOOR = 1.5;
   var meta = { title: "", channel: "", avatar: "", viewers: "", lastRefresh: 0 };
 
@@ -571,7 +571,7 @@
     var lat = cdnLat > 0 ? cdnLat : (scrubberDrift > 2 ? scrubberDrift : 0);
 
     bufferEma = bufferEma === null ? rawBuf : bufferEma * 0.9 + rawBuf * 0.1;
-    if (lastBufHealth !== null) drainEma = drainEma * 0.8 + (rawBuf - lastBufHealth) * 0.2;
+    if (lastBufHealth !== null) drainEma = drainEma * 0.95 + (rawBuf - lastBufHealth) * 0.05;
     lastBufHealth = rawBuf;
 
     if (lat < 2.0) {
