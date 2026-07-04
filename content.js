@@ -27,6 +27,10 @@
   var lastStall = 0;
   var stallCooldownUntil = 0;
   var cdnFloor = 0;
+  var lastHeartbeat = 0;
+  var yieldedAt = 0;
+  var lastCdnFloorDecay = 0;
+  var tickCount = 0;
 
   var bridgeScript = document.createElement("script");
   bridgeScript.src = chrome.runtime.getURL("bridge.js");
@@ -565,7 +569,9 @@
   }
 
   function tick() {
+    tickCount++;
     if (!isContextValid() || window.__semAtrasoActiveInstance !== myInstanceId) {
+      log("Tick encerrado: contexto invalido ou instancia substituida.");
       clearInterval(tickIntervalId);
       try { if (video) video.removeEventListener("waiting", onVideoWaiting); } catch(e) {}
       return;
@@ -573,22 +579,51 @@
     if (!settings.enabled) return;
     if (!isWatchOrLivePage()) return;
 
+    var now = Date.now();
+    if (now - lastHeartbeat > 30000) {
+      lastHeartbeat = now;
+      var cdnLat = bridgeData && bridgeData.latency > 0 ? bridgeData.latency : 0;
+      log("Heartbeat #" + tickCount + " | profile=" + settings.profile + " yielded=" + yieldedToUser + " cdnFloor=" + cdnFloor.toFixed(1) + " stallCooldown=" + (stallCooldownUntil > now ? ((stallCooldownUntil - now) / 1000).toFixed(0) + "s" : "off") + " catchingUp=" + catchingUp + " rate=" + currentRate + " cdn=" + cdnLat.toFixed(1) + " bridge=" + bridgeData.statsAvailable);
+    }
+
+    if (cdnFloor > 0 && now - lastCdnFloorDecay > 300000 && now - lastStall > 300000) {
+      lastCdnFloorDecay = now;
+      cdnFloor = Math.max(0, cdnFloor - 0.5);
+      log("CDN floor decay: " + cdnFloor.toFixed(1) + "s");
+    }
+
     grabPlayer();
     checkError();
-    if (!video || video.paused || !isLive()) return;
+    if (!video || video.paused || !isLive()) { return; }
     if (isAd()) { if (currentRate !== 1.0) applyRate(1.0); return; }
-    if (video.readyState < 3) { if (currentRate !== 1.0) applyRate(1.0); return; }
+    if (video.readyState < 3) { if (currentRate !== 1.0) applyRate(1.0); log("Tick skip: readyState=" + video.readyState); return; }
     if (isSeeking()) { if (currentRate !== 1.0) applyRate(1.0); return; }
-    if (Date.now() - lastStall < 5000) { return; }
+    if (now - lastStall < 5000) { return; }
 
     if (bridgeData.playerRate > 0) {
       var cur = bridgeData.playerRate;
       if (Math.abs(cur - appliedRate) > 0.01) {
-        if (Math.abs(cur - 1.0) < 0.01) { yieldedToUser = false; }
-        else { yieldedToUser = true; appliedRate = cur; }
+        if (Math.abs(cur - 1.0) < 0.01) {
+          if (yieldedToUser) log("Yield resetado: usuario voltou para 1.0x");
+          yieldedToUser = false;
+          yieldedAt = 0;
+        } else {
+          yieldedToUser = true;
+          yieldedAt = now;
+          appliedRate = cur;
+          log("Yield ativado: usuario setou rate=" + cur.toFixed(2));
+        }
       }
     }
-    if (yieldedToUser) return;
+    if (yieldedToUser) {
+      if (yieldedAt > 0 && now - yieldedAt > 120000) {
+        yieldedToUser = false;
+        yieldedAt = 0;
+        log("Yield expirado apos 120s sem interacao. Retomando controle.");
+      } else {
+        return;
+      }
+    }
 
     var scrubberDrift = 0;
     var bar = document.querySelector(".ytp-progress-bar");
@@ -662,6 +697,7 @@
   var tickIntervalId = setInterval(tick, 500);
 
   window.addEventListener("yt-navigate-finish", function () {
+    log("SPA navigate-finish: resetando estado.");
     if (video) { try { applyRate(1.0); } catch (e) {} }
     currentUrl = "";
     recoveryAttempts = 0;
@@ -676,9 +712,12 @@
     catchingUp = false;
     appliedRate = 1.0;
     yieldedToUser = false;
+    yieldedAt = 0;
     stallTimes = [];
     lastStall = 0;
     cdnFloor = 0;
+    lastCdnFloorDecay = 0;
+    tickCount = 0;
     grabPlayer();
   });
 
