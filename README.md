@@ -12,9 +12,9 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/manifest-v3-blue?style=flat-square" alt="Manifest V3">
-  <img src="https://img.shields.io/badge/versão-2.2-8b5cf6?style=flat-square" alt="Versão 2.2">
+  <img src="https://img.shields.io/badge/versão-2.4.0-8b5cf6?style=flat-square" alt="Versão 2.4.0">
   <img src="https://img.shields.io/badge/licença-MIT-green?style=flat-square" alt="MIT">
-  <img src="https://img.shields.io/badge/idiomas-PT--BR%20%7C%20EN-orange?style=flat-square" alt="i18n">
+  <img src="https://img.shields.io/badge/idiomas-18-orange?style=flat-square" alt="i18n">
 </p>
 
 ---
@@ -113,9 +113,11 @@ $d="$env:USERPROFILE\Downloads\yt-zero-delay"; Invoke-WebRequest "https://github
 ```
 content.js      Motor de aceleração / Acceleration engine
 bridge.js       Bridge Main World (YouTube native APIs)
+background.js   Update checker e injeção automática
 popup.html      Interface do popup / Popup UI
 popup.js        Lógica e i18n / Logic and i18n
 manifest.json   Manifest V3
+_locales/       18 idiomas (pt_BR, en, es, fr, de, it, ja, ko, zh_CN...)
 icons/          16, 32, 48, 128px
 ```
 
