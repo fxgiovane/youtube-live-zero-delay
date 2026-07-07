@@ -1,0 +1,23 @@
+{
+  "extName": { "message": "Senza Ritardo" },
+  "extDesc": { "message": "Riduce il ritardo nelle dirette YouTube per essere sempre in vantaggio." },
+  "title": { "message": "Senza Ritardo" },
+  "delayLabel": { "message": "Ritardo della diretta" },
+  "synced": { "message": "Sincronizzato" },
+  "adjusting": { "message": "Regolazione della latenza..." },
+  "disabled": { "message": "Disattivato" },
+  "error": { "message": "Errore del player" },
+  "noStream": { "message": "Nessuna diretta" },
+  "seeking": { "message": "Sincronizzazione del ritardo..." },
+  "reducing": { "message": "Riduzione del ritardo..." },
+  "liveLabel": { "message": "Diretta rilevata" },
+  "loading": { "message": "Caricamento..." },
+  "profileLabel": { "message": "Profilo" },
+  "custom": { "message": "Personalizzato" },
+  "noLive": { "message": "Nessuna diretta in questa scheda.<br>Apri una live su YouTube." },
+  "ultra": { "message": "Ultra" },
+  "aggressive": { "message": "Aggressivo" },
+  "safe": { "message": "Sicuro" },
+  "watching": { "message": "spettatori" },
+  "ad": { "message": "Pubblicità..." }
+}

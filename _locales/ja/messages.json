@@ -1,0 +1,23 @@
+{
+  "extName": { "message": "遅延なし" },
+  "extDesc": { "message": "YouTubeライブ配信の遅延を減らし、常に最前線へ。" },
+  "title": { "message": "遅延なし" },
+  "delayLabel": { "message": "配信の遅延" },
+  "synced": { "message": "同期済み" },
+  "adjusting": { "message": "レイテンシ調整中..." },
+  "disabled": { "message": "無効" },
+  "error": { "message": "プレーヤーエラー" },
+  "noStream": { "message": "ライブなし" },
+  "seeking": { "message": "遅延を同期中..." },
+  "reducing": { "message": "遅延を短縮中..." },
+  "liveLabel": { "message": "ライブ検出" },
+  "loading": { "message": "読み込み中..." },
+  "profileLabel": { "message": "プロファイル" },
+  "custom": { "message": "カスタム" },
+  "noLive": { "message": "このタブにライブ配信はありません。<br>YouTubeのライブを開いてください。" },
+  "ultra": { "message": "ウルトラ" },
+  "aggressive": { "message": "アグレッシブ" },
+  "safe": { "message": "セーフ" },
+  "watching": { "message": "人が視聴中" },
+  "ad": { "message": "広告再生中..." }
+}

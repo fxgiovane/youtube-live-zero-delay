@@ -1,0 +1,23 @@
+{
+  "extName": { "message": "Sin Retraso" },
+  "extDesc": { "message": "Reduce el retraso en transmisiones en vivo de YouTube para que siempre estés adelante." },
+  "title": { "message": "Sin Retraso" },
+  "delayLabel": { "message": "Retraso de la transmisión" },
+  "synced": { "message": "Sincronizado" },
+  "adjusting": { "message": "Ajustando latencia..." },
+  "disabled": { "message": "Desactivado" },
+  "error": { "message": "Error en el reproductor" },
+  "noStream": { "message": "Sin transmisión" },
+  "seeking": { "message": "Sincronizando retraso..." },
+  "reducing": { "message": "Reduciendo retraso..." },
+  "liveLabel": { "message": "Transmisión detectada" },
+  "loading": { "message": "Cargando..." },
+  "profileLabel": { "message": "Perfil" },
+  "custom": { "message": "Personalizado" },
+  "noLive": { "message": "No hay transmisión en esta pestaña.<br>Abre un directo en YouTube." },
+  "ultra": { "message": "Ultra" },
+  "aggressive": { "message": "Agresivo" },
+  "safe": { "message": "Seguro" },
+  "watching": { "message": "viendo" },
+  "ad": { "message": "Anuncio comercial..." }
+}

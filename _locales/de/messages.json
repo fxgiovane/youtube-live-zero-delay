@@ -1,0 +1,23 @@
+{
+  "extName": { "message": "Ohne Verzögerung" },
+  "extDesc": { "message": "Reduziert die Verzögerung bei YouTube-Livestreams, damit du immer vorne bist." },
+  "title": { "message": "Ohne Verzögerung" },
+  "delayLabel": { "message": "Live-Verzögerung" },
+  "synced": { "message": "Synchronisiert" },
+  "adjusting": { "message": "Latenz wird angepasst..." },
+  "disabled": { "message": "Deaktiviert" },
+  "error": { "message": "Player-Fehler" },
+  "noStream": { "message": "Kein Livestream" },
+  "seeking": { "message": "Verzögerung wird synchronisiert..." },
+  "reducing": { "message": "Verzögerung wird reduziert..." },
+  "liveLabel": { "message": "Livestream erkannt" },
+  "loading": { "message": "Laden..." },
+  "profileLabel": { "message": "Profil" },
+  "custom": { "message": "Benutzerdefiniert" },
+  "noLive": { "message": "Kein Livestream in diesem Tab.<br>Öffne einen YouTube-Livestream." },
+  "ultra": { "message": "Ultra" },
+  "aggressive": { "message": "Aggressiv" },
+  "safe": { "message": "Sicher" },
+  "watching": { "message": "Zuschauer" },
+  "ad": { "message": "Werbung..." }
+}

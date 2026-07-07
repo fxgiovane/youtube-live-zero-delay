@@ -26,33 +26,12 @@ document.addEventListener("DOMContentLoaded", function () {
   var profs = document.querySelectorAll(".pb");
   var dbgBtn = document.getElementById("dbgBtn");
 
-  var L = {
-    pt: {
-      title: "Sem Atraso", delayLabel: "Atraso da Transmiss\u00e3o",
-      synced: "Sincronizado", adjusting: "Ajustando lat\u00eancia...", disabled: "Desativado",
-      error: "Erro no player", noStream: "Sem live", seeking: "Sincronizando atraso...",
-      reducing: "Reduzindo delay...",
-      liveLabel: "Live Detectada", loading: "Carregando...",
-      profileLabel: "Perfil", custom: "Personalizado",
-      noLive: "Nenhuma live nesta aba.<br>Abra uma transmiss\u00e3o no YouTube.",
-      ultra: "Ultra", aggressive: "Agressivo", safe: "Seguro", watching: "assistindo",
-      ad: "An\u00fancio comercial..."
-    },
-    en: {
-      title: "No Delay", delayLabel: "Live Delay",
-      synced: "Synced", adjusting: "Adjusting latency...", disabled: "Disabled",
-      error: "Player error", noStream: "No live", seeking: "Synchronizing delay...",
-      reducing: "Reducing delay...",
-      liveLabel: "Live Detected", loading: "Loading...",
-      profileLabel: "Profile", custom: "Custom",
-      noLive: "No live stream in this tab.<br>Open a YouTube live.",
-      ultra: "Ultra", aggressive: "Aggressive", safe: "Safe", watching: "watching",
-      ad: "Commercial ad..."
-    }
-  };
-
-  var lang = navigator.language.startsWith("pt") ? "pt" : "en";
-  var t = L[lang];
+  var t = {};
+  ["title","delayLabel","synced","adjusting","disabled","error","noStream","seeking",
+   "reducing","liveLabel","loading","profileLabel","custom","noLive","ultra",
+   "aggressive","safe","watching","ad"].forEach(function(k) {
+    t[k] = chrome.i18n.getMessage(k) || k;
+  });
 
   document.querySelectorAll("[data-i18n]").forEach(function (el) {
     var k = el.getAttribute("data-i18n");

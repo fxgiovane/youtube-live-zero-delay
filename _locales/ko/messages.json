@@ -1,0 +1,23 @@
+{
+  "extName": { "message": "지연 없음" },
+  "extDesc": { "message": "YouTube 라이브 스트리밍의 지연을 줄여 항상 앞서 나가세요." },
+  "title": { "message": "지연 없음" },
+  "delayLabel": { "message": "라이브 지연" },
+  "synced": { "message": "동기화됨" },
+  "adjusting": { "message": "지연 조정 중..." },
+  "disabled": { "message": "비활성" },
+  "error": { "message": "플레이어 오류" },
+  "noStream": { "message": "라이브 없음" },
+  "seeking": { "message": "지연 동기화 중..." },
+  "reducing": { "message": "지연 줄이는 중..." },
+  "liveLabel": { "message": "라이브 감지됨" },
+  "loading": { "message": "로딩 중..." },
+  "profileLabel": { "message": "프로필" },
+  "custom": { "message": "사용자 지정" },
+  "noLive": { "message": "이 탭에 라이브가 없습니다.<br>YouTube 라이브를 열어주세요." },
+  "ultra": { "message": "울트라" },
+  "aggressive": { "message": "공격적" },
+  "safe": { "message": "안전" },
+  "watching": { "message": "명 시청 중" },
+  "ad": { "message": "광고 재생 중..." }
+}

@@ -1,0 +1,23 @@
+{
+  "extName": { "message": "Sans Délai" },
+  "extDesc": { "message": "Réduit le délai des diffusions en direct YouTube pour garder une longueur d'avance." },
+  "title": { "message": "Sans Délai" },
+  "delayLabel": { "message": "Délai de diffusion" },
+  "synced": { "message": "Synchronisé" },
+  "adjusting": { "message": "Ajustement de la latence..." },
+  "disabled": { "message": "Désactivé" },
+  "error": { "message": "Erreur du lecteur" },
+  "noStream": { "message": "Pas de live" },
+  "seeking": { "message": "Synchronisation du délai..." },
+  "reducing": { "message": "Réduction du délai..." },
+  "liveLabel": { "message": "Live détecté" },
+  "loading": { "message": "Chargement..." },
+  "profileLabel": { "message": "Profil" },
+  "custom": { "message": "Personnalisé" },
+  "noLive": { "message": "Pas de live dans cet onglet.<br>Ouvrez un direct sur YouTube." },
+  "ultra": { "message": "Ultra" },
+  "aggressive": { "message": "Agressif" },
+  "safe": { "message": "Prudent" },
+  "watching": { "message": "regardent" },
+  "ad": { "message": "Publicité..." }
+}

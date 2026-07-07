@@ -1,0 +1,23 @@
+{
+  "extName": { "message": "बिना देरी" },
+  "extDesc": { "message": "YouTube लाइव स्ट्रीम में देरी कम करता है ताकि आप हमेशा आगे रहें।" },
+  "title": { "message": "बिना देरी" },
+  "delayLabel": { "message": "लाइव विलंब" },
+  "synced": { "message": "सिंक हो गया" },
+  "adjusting": { "message": "विलंब समायोजित हो रहा है..." },
+  "disabled": { "message": "अक्षम" },
+  "error": { "message": "प्लेयर त्रुटि" },
+  "noStream": { "message": "कोई लाइव नहीं" },
+  "seeking": { "message": "विलंब सिंक हो रहा है..." },
+  "reducing": { "message": "विलंब कम हो रहा है..." },
+  "liveLabel": { "message": "लाइव का पता चला" },
+  "loading": { "message": "लोड हो रहा है..." },
+  "profileLabel": { "message": "प्रोफ़ाइल" },
+  "custom": { "message": "कस्टम" },
+  "noLive": { "message": "इस टैब में कोई लाइव नहीं है।<br>YouTube पर एक लाइव स्ट्रीम खोलें।" },
+  "ultra": { "message": "अल्ट्रा" },
+  "aggressive": { "message": "आक्रामक" },
+  "safe": { "message": "सुरक्षित" },
+  "watching": { "message": "देख रहे हैं" },
+  "ad": { "message": "विज्ञापन..." }
+}

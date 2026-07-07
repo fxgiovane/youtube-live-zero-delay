@@ -1,0 +1,23 @@
+{
+  "extName": { "message": "بدون تأخير" },
+  "extDesc": { "message": "يقلل التأخير في البث المباشر على يوتيوب لتكون دائمًا في المقدمة." },
+  "title": { "message": "بدون تأخير" },
+  "delayLabel": { "message": "تأخير البث" },
+  "synced": { "message": "متزامن" },
+  "adjusting": { "message": "جارٍ ضبط التأخير..." },
+  "disabled": { "message": "معطّل" },
+  "error": { "message": "خطأ في المشغّل" },
+  "noStream": { "message": "لا يوجد بث" },
+  "seeking": { "message": "جارٍ مزامنة التأخير..." },
+  "reducing": { "message": "جارٍ تقليل التأخير..." },
+  "liveLabel": { "message": "تم اكتشاف بث مباشر" },
+  "loading": { "message": "جارٍ التحميل..." },
+  "profileLabel": { "message": "الوضع" },
+  "custom": { "message": "مخصص" },
+  "noLive": { "message": "لا يوجد بث مباشر في هذه التبويبة.<br>افتح بثًا مباشرًا على يوتيوب." },
+  "ultra": { "message": "فائق" },
+  "aggressive": { "message": "قوي" },
+  "safe": { "message": "آمن" },
+  "watching": { "message": "يشاهدون" },
+  "ad": { "message": "إعلان تجاري..." }
+}

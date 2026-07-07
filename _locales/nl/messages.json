@@ -1,0 +1,23 @@
+{
+  "extName": { "message": "Zonder Vertraging" },
+  "extDesc": { "message": "Vermindert de vertraging bij YouTube-livestreams zodat je altijd voorloopt." },
+  "title": { "message": "Zonder Vertraging" },
+  "delayLabel": { "message": "Live-vertraging" },
+  "synced": { "message": "Gesynchroniseerd" },
+  "adjusting": { "message": "Latentie aanpassen..." },
+  "disabled": { "message": "Uitgeschakeld" },
+  "error": { "message": "Spelerfout" },
+  "noStream": { "message": "Geen livestream" },
+  "seeking": { "message": "Vertraging synchroniseren..." },
+  "reducing": { "message": "Vertraging verminderen..." },
+  "liveLabel": { "message": "Livestream gedetecteerd" },
+  "loading": { "message": "Laden..." },
+  "profileLabel": { "message": "Profiel" },
+  "custom": { "message": "Aangepast" },
+  "noLive": { "message": "Geen livestream in dit tabblad.<br>Open een YouTube-livestream." },
+  "ultra": { "message": "Ultra" },
+  "aggressive": { "message": "Agressief" },
+  "safe": { "message": "Veilig" },
+  "watching": { "message": "kijken" },
+  "ad": { "message": "Reclame..." }
+}

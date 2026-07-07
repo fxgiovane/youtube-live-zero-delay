@@ -1,0 +1,23 @@
+{
+  "extName": { "message": "Gecikmesiz" },
+  "extDesc": { "message": "YouTube canlı yayınlarındaki gecikmeyi azaltarak her zaman önde olmanızı sağlar." },
+  "title": { "message": "Gecikmesiz" },
+  "delayLabel": { "message": "Yayın gecikmesi" },
+  "synced": { "message": "Senkronize" },
+  "adjusting": { "message": "Gecikme ayarlanıyor..." },
+  "disabled": { "message": "Devre dışı" },
+  "error": { "message": "Oynatıcı hatası" },
+  "noStream": { "message": "Canlı yayın yok" },
+  "seeking": { "message": "Gecikme senkronize ediliyor..." },
+  "reducing": { "message": "Gecikme azaltılıyor..." },
+  "liveLabel": { "message": "Canlı yayın algılandı" },
+  "loading": { "message": "Yükleniyor..." },
+  "profileLabel": { "message": "Profil" },
+  "custom": { "message": "Özel" },
+  "noLive": { "message": "Bu sekmede canlı yayın yok.<br>YouTube'da bir canlı yayın açın." },
+  "ultra": { "message": "Ultra" },
+  "aggressive": { "message": "Agresif" },
+  "safe": { "message": "Güvenli" },
+  "watching": { "message": "izliyor" },
+  "ad": { "message": "Reklam..." }
+}

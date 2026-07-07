@@ -1,0 +1,23 @@
+{
+  "extName": { "message": "Без Задержки" },
+  "extDesc": { "message": "Уменьшает задержку YouTube-трансляций, чтобы вы всегда были впереди." },
+  "title": { "message": "Без Задержки" },
+  "delayLabel": { "message": "Задержка трансляции" },
+  "synced": { "message": "Синхронизировано" },
+  "adjusting": { "message": "Настройка задержки..." },
+  "disabled": { "message": "Отключено" },
+  "error": { "message": "Ошибка плеера" },
+  "noStream": { "message": "Нет трансляции" },
+  "seeking": { "message": "Синхронизация задержки..." },
+  "reducing": { "message": "Уменьшение задержки..." },
+  "liveLabel": { "message": "Трансляция обнаружена" },
+  "loading": { "message": "Загрузка..." },
+  "profileLabel": { "message": "Профиль" },
+  "custom": { "message": "Настраиваемый" },
+  "noLive": { "message": "В этой вкладке нет трансляции.<br>Откройте прямой эфир на YouTube." },
+  "ultra": { "message": "Ультра" },
+  "aggressive": { "message": "Агрессивный" },
+  "safe": { "message": "Безопасный" },
+  "watching": { "message": "смотрят" },
+  "ad": { "message": "Рекламная пауза..." }
+}

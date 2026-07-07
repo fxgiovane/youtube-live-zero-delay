@@ -1,0 +1,23 @@
+{
+  "extName": { "message": "Bez Opóźnień" },
+  "extDesc": { "message": "Zmniejsza opóźnienie transmisji na żywo YouTube, byś zawsze był o krok przed innymi." },
+  "title": { "message": "Bez Opóźnień" },
+  "delayLabel": { "message": "Opóźnienie transmisji" },
+  "synced": { "message": "Zsynchronizowano" },
+  "adjusting": { "message": "Dostosowywanie opóźnienia..." },
+  "disabled": { "message": "Wyłączono" },
+  "error": { "message": "Błąd odtwarzacza" },
+  "noStream": { "message": "Brak transmisji" },
+  "seeking": { "message": "Synchronizacja opóźnienia..." },
+  "reducing": { "message": "Zmniejszanie opóźnienia..." },
+  "liveLabel": { "message": "Wykryto transmisję" },
+  "loading": { "message": "Ładowanie..." },
+  "profileLabel": { "message": "Profil" },
+  "custom": { "message": "Niestandardowy" },
+  "noLive": { "message": "Brak transmisji na żywo w tej karcie.<br>Otwórz transmisję na YouTube." },
+  "ultra": { "message": "Ultra" },
+  "aggressive": { "message": "Agresywny" },
+  "safe": { "message": "Bezpieczny" },
+  "watching": { "message": "ogląda" },
+  "ad": { "message": "Reklama..." }
+}

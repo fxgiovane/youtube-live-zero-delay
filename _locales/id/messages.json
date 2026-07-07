@@ -1,0 +1,23 @@
+{
+  "extName": { "message": "Tanpa Delay" },
+  "extDesc": { "message": "Mengurangi delay siaran langsung YouTube agar Anda selalu terdepan." },
+  "title": { "message": "Tanpa Delay" },
+  "delayLabel": { "message": "Delay siaran" },
+  "synced": { "message": "Tersinkronisasi" },
+  "adjusting": { "message": "Menyesuaikan latensi..." },
+  "disabled": { "message": "Dinonaktifkan" },
+  "error": { "message": "Error pemutar" },
+  "noStream": { "message": "Tidak ada siaran" },
+  "seeking": { "message": "Menyinkronkan delay..." },
+  "reducing": { "message": "Mengurangi delay..." },
+  "liveLabel": { "message": "Siaran langsung terdeteksi" },
+  "loading": { "message": "Memuat..." },
+  "profileLabel": { "message": "Profil" },
+  "custom": { "message": "Kustom" },
+  "noLive": { "message": "Tidak ada siaran langsung di tab ini.<br>Buka siaran langsung di YouTube." },
+  "ultra": { "message": "Ultra" },
+  "aggressive": { "message": "Agresif" },
+  "safe": { "message": "Aman" },
+  "watching": { "message": "menonton" },
+  "ad": { "message": "Iklan..." }
+}

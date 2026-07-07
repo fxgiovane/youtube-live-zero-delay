@@ -1,0 +1,23 @@
+{
+  "extName": { "message": "No Delay" },
+  "extDesc": { "message": "Reduces delay in YouTube live streams so you're always ahead." },
+  "title": { "message": "No Delay" },
+  "delayLabel": { "message": "Live Delay" },
+  "synced": { "message": "Synced" },
+  "adjusting": { "message": "Adjusting latency..." },
+  "disabled": { "message": "Disabled" },
+  "error": { "message": "Player error" },
+  "noStream": { "message": "No live" },
+  "seeking": { "message": "Synchronizing delay..." },
+  "reducing": { "message": "Reducing delay..." },
+  "liveLabel": { "message": "Live Detected" },
+  "loading": { "message": "Loading..." },
+  "profileLabel": { "message": "Profile" },
+  "custom": { "message": "Custom" },
+  "noLive": { "message": "No live stream in this tab.<br>Open a YouTube live." },
+  "ultra": { "message": "Ultra" },
+  "aggressive": { "message": "Aggressive" },
+  "safe": { "message": "Safe" },
+  "watching": { "message": "watching" },
+  "ad": { "message": "Commercial ad..." }
+}
