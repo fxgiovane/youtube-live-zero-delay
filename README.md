@@ -23,15 +23,19 @@
 
 O YouTube mantém de 10 a 20 segundos de buffer entre o que você assiste e o sinal real. A extensão acelera o vídeo de forma sutil pra consumir esse buffer e diminuir o atraso até o mínimo possível.
 
-### Instalação rápida
+### Instalação
 
+#### 1. Instalação oficial (Chrome Web Store)
+Acesse a [página oficial da extensão na Chrome Web Store](https://chromewebstore.google.com/detail/acdcolklblakndmefcakmbpjalileeif?utm_source=item-share-cb) e clique em **Usar no Chrome** para instalar e receber atualizações automáticas.
+
+#### 2. Instalação via PowerShell (Desenvolvedor)
 Cole no **PowerShell** e aperte Enter:
 
 ```powershell
 $d="$env:USERPROFILE\Downloads\yt-zero-delay"; Invoke-WebRequest "https://github.com/fxgiovane/yt-zero-delay/archive/refs/heads/main.zip" -OutFile "$d.zip"; Expand-Archive "$d.zip" -DestinationPath $d -Force; Remove-Item "$d.zip"; Write-Host "`nBaixado em: $d\yt-zero-delay-main`nAgora abra chrome://extensions, ative o Modo do Desenvolvedor e carregue essa pasta." -ForegroundColor Green
 ```
 
-### Instalação manual
+#### 3. Instalação manual (ZIP)
 
 1. [Baixe o ZIP](https://github.com/fxgiovane/yt-zero-delay/archive/refs/heads/main.zip) e extraia onde preferir
 2. Acesse `chrome://extensions`
@@ -42,7 +46,7 @@ $d="$env:USERPROFILE\Downloads\yt-zero-delay"; Invoke-WebRequest "https://github
 
 ### Como funciona
 
-**Aceleração** - o vídeo roda entre 1.02x e 1.15x dependendo do perfil. Você não nota a diferença, mas a cada 10 segundos o atraso diminui um pouco até chegar perto do mínimo.
+**Aceleração** - o vídeo roda entre 1.05x e 1.25x dependendo do perfil. Você não nota a diferença, mas a cada 10 segundos o atraso diminui um pouco até chegar perto do mínimo.
 
 **Buffer** - se o buffer ficar fino demais pro perfil ativo, a velocidade volta pra 1.0x pra não travar. Quando normaliza, acelera de novo.
 
@@ -81,15 +85,19 @@ $d="$env:USERPROFILE\Downloads\yt-zero-delay"; Invoke-WebRequest "https://github
 
 YouTube keeps a 10-20 second buffer between what you see and the actual live signal. This extension speeds up playback slightly to eat through that buffer and bring latency down.
 
-### Quick install
+### Installation
 
+#### 1. Official installation (Chrome Web Store)
+Go to the [official Chrome Web Store page](https://chromewebstore.google.com/detail/acdcolklblakndmefcakmbpjalileeif?utm_source=item-share-cb) and click **Add to Chrome** to install and receive automatic updates.
+
+#### 2. PowerShell installation (Developer)
 Paste in **PowerShell** and press Enter:
 
 ```powershell
 $d="$env:USERPROFILE\Downloads\yt-zero-delay"; Invoke-WebRequest "https://github.com/fxgiovane/yt-zero-delay/archive/refs/heads/main.zip" -OutFile "$d.zip"; Expand-Archive "$d.zip" -DestinationPath $d -Force; Remove-Item "$d.zip"; Write-Host "`nDownloaded to: $d\yt-zero-delay-main`nNow open chrome://extensions, enable Developer Mode and load that folder." -ForegroundColor Green
 ```
 
-### Manual install
+#### 3. Manual installation (ZIP)
 
 1. [Download the ZIP](https://github.com/fxgiovane/yt-zero-delay/archive/refs/heads/main.zip) and extract it
 2. Go to `chrome://extensions`
@@ -100,7 +108,7 @@ $d="$env:USERPROFILE\Downloads\yt-zero-delay"; Invoke-WebRequest "https://github
 
 ### How it works
 
-**Acceleration** - video runs between 1.02x and 1.15x depending on the profile. You won't notice the difference, but every 10 seconds the delay shrinks a bit until it's near minimum.
+**Acceleration** - video runs between 1.05x and 1.25x depending on the profile. You won't notice the difference, but every 10 seconds the delay shrinks a bit until it's near minimum.
 
 **Buffer** - if the buffer gets too thin for the active profile, speed goes back to 1.0x to avoid stuttering. When it recovers, acceleration resumes.
 
