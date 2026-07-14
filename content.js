@@ -372,7 +372,7 @@
       }
       var order = ["ultra", "aggressive", "conservative"];
       var idx = order.indexOf(settings.profile);
-      if (idx >= 0 && idx < order.length - 1 && now - userProfileOverride > 60000) {
+      if (idx >= 0 && idx < order.length - 1 && now - userProfileOverride > 90000) {
         settings.profile = order[idx + 1];
         chrome.storage.local.set({ profile: settings.profile });
         lastUpgrade = now;
@@ -597,7 +597,7 @@
       log("CDN floor decay: " + cdnFloor.toFixed(1) + "s");
     }
 
-    if (now - lastStall > 180000 && now - lastUpgrade > 180000 && now - userProfileOverride > 180000) {
+    if (now - lastStall > 180000 && now - lastUpgrade > 180000 && now - userProfileOverride > 90000) {
       var upgradeOrder = ["conservative", "aggressive", "ultra"];
       var ui = upgradeOrder.indexOf(settings.profile);
       if (ui >= 0 && ui < upgradeOrder.length - 1) {
